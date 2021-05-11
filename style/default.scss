@@ -40,15 +40,18 @@ details>summary{ list-style:none;}
     align-items: center;
     padding: 0 32px;
     min-height: 75px;
-    position: relative;
+    
+    &_left{
+        position: relative;
+    }
 }
 .search{
     &-label{ cursor: pointer; }
     &-block{
         position: absolute;
         display: flex;
-        top: 16px;
-        left: 150px;
+        top: 0px;
+        left: 117px;
         width:250px;
         opacity: 0;
 
@@ -356,13 +359,13 @@ details>summary{ list-style:none;}
     line-height: 17px;
     color: #5D5D5D;
     margin-bottom: 18px;
-	flex-grow: 1;
 }
 .price_product{
     font-size: 16px;
     line-height: 19px;
     color: $pink-color;
     margin-bottom: 20px;
+    margin-top: auto;
 }
 .b_all_product{
     text-decoration: none;
@@ -644,6 +647,7 @@ footer{
     position: absolute;
     background-color: #FFF;
     width: 100%;
+    min-width: 343px;
     top: 0;
     left: 0;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -1289,6 +1293,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
 }
 @media screen and (max-width:600px){
+    .header{
+        position: relative;
+        &_left{
+            position: initial;
+        }
+    }
     .mobile-menu{ display: block; }
     .desktop_hidden{
         display: none;
@@ -1369,9 +1379,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
         font-size:0;
         padding:0;
     }
-	.filter_content{
-		width:200%;
-	}
+	// .filter_content{
+	// 	width:200%;
+	// }
     .block_fetuder{
         margin-bottom:64px;
         margin-top: 24px;
